@@ -1,0 +1,12 @@
+#newEncounterNote {
+    position: absolute;
+    left: 1%;
+    width: 15em;
+}
+#encounterNote {
+    margin-left: 15em;
+}
+body {
+    background-color: #C47C7C;
+
+}

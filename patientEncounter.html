@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="EncounterNote.css" />
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="PatientEncounter.js"></script>
+
+</head>
+<div id="patientLookup">
+    <label for="patientName"> Enter Patient's Name: </label>
+    <input id="patientName" list="patient_names" placeholder="Type here">
+    <datalist id="patient_names">
+        <option value="Anthony">Anthony</option>
+        <option value="Andy">Andy</option>
+        <option value="Anna">Anna</option>
+        <option value="Astra">Astra</option>
+        <option value="Alexandra">Alexandra</option>
+        <option value="Allen">Allen</option>
+        <option value="Ahmed">Ahmed</option>
+    </datalist>
+
+</div>
+
+<div id="encounterNote">
+    <h2> Past Encounter Note </h2>
+    <ul id="pastEncounterNoteList"></ul>
+    <textarea id="pastEncounterNote" class="encounterNote" rows="10" cols="50"></textarea>
+</div>
+
+<div id="newEncounterNote">
+    <h2> New Patient Encounter Note </h2>
+
+    <Form>
+        <div>
+            <textarea id="newEncounterNoteContext" class="encounterNotes" rows="10" cols="50"></textarea>
+        </div>
+
+        <div>
+            <button id="signOffNote" type="button"> Sign off on note </button>
+        </div>
+
+    </Form>
+
+</div>
+
+</body>
+</html>
